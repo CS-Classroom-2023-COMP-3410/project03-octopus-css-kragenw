@@ -4,6 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <title>The Fascinating World of Octopuses</title>
+    <link rel="stylesheet" href="styles.css">
+
 </head>
 
 <body>
@@ -18,6 +20,7 @@
 
         <!-- Introduction -->
         <h2>Introduction</h2>
+        <hr>
         <p>
             Octopuses are among the most fascinating creatures in the ocean.
             They are known for their intelligence and remarkable adaptability.
@@ -26,7 +29,7 @@
         <!-- Amazing Facts -->
         <h3>Amazing Facts</h3>
         <!-- Unordered list -->
-        <ul>
+        <ul class="ul">
             <li>They have three hearts.</li>
             <li>They can change color.</li>
             <li>They are masters of camouflage.</li>
@@ -42,7 +45,7 @@
         <!-- Comparison with other Cephalopods -->
         <h5>Comparison with Other Cephalopods</h5>
         <!-- Ordered list -->
-        <ol>
+        <ol class="ol">
             <li>Squid</li>
             <li>Cuttlefish</li>
             <li>Nautilus</li>
@@ -52,18 +55,18 @@
         <h6>External Resources</h6>
         <p>
             For more information, visit these websites:
-            <a href="https://www.oceana.org/" target="_blank">Oceana</a> |
-            <a href="https://www.nationalgeographic.com/" target="_blank">National Geographic</a>
+            <a href="https://www.oceana.org/" target="_blank" class="link">Oceana</a> |
+            <a href="https://www.nationalgeographic.com/" target="_blank" class="link">National Geographic</a>
         </p>
 
         <!-- Fun Experiment: Octopus Quiz -->
-        <div id="quiz-section">
+        <div class="quiz-box" id="quiz-section">
 
             <!-- Image -->
-            <img src="octopus-image.png" alt="Image of an octopus" width="100">
+            <img src="octopus-image.png" alt="Image of an octopus" width="100" class="quiz-image">
 
-            <h2>Octopus Quiz</h2>
-            <form action="/submit-quiz" method="POST">
+            <h2 class="quiz-header">Octopus Quiz</h2>
+            <form action="/submit-quiz" method="POST" class="quiz-form">
                 <!-- Question 1 -->
                 <label for="question1">How many hearts does an octopus have?</label>
                 <input type="text" id="question1" name="question1"><br>
@@ -80,8 +83,9 @@
 
     <!-- Table -->
     <div id="species-table">
-        <h2>Common Octopus Species</h2>
-        <table border="1">
+        <h2 class="species-header">Common Octopus Species</h2>
+        <hr>
+        <table>
             <tr>
                 <th>Species</th>
                 <th>Location</th>
