@@ -2,9 +2,9 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    }
-    
+}
 
+/* Body styling */
 body {
     margin: 0;
     padding: 0;
@@ -13,29 +13,33 @@ body {
     font-stretch: expanded;
 }
 
-hr{
+/* Horizontal line styling */
+hr {
     border: 1.5px solid #90E0EF;
     width: 50px;
     margin-bottom: 20px;
 }
 
+/* Headings styling */
 h2, h3, h4, h5, h6 {
     margin-top: 10px;
     color: #016894;
     margin-bottom: 10px;
-    
 }
+
+/* Styling for text elements */
 p, li, th, td, form label, form input {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-h2:not(.species-header), h3{
+/* Capitalize specific headings */
+h2:not(.species-header), h3 {
     text-transform: uppercase;
 }
 
-
+/* Header section styling */
 #header {
-    background-image: linear-gradient(90deg,#006995, #01B2D7);
+    background-image: linear-gradient(90deg, #006995, #01B2D7);
     color: white;
     text-align: center;
     padding: 40px 0;
@@ -43,7 +47,6 @@ h2:not(.species-header), h3{
     margin: 20px auto;
     border-radius: 8px;
     text-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-
 }
 
 #header p {
@@ -51,11 +54,9 @@ h2:not(.species-header), h3{
     padding-left: 3%;
     padding-top: 20px;
     font-style: italic;
-    
 }
 
-
-
+/* Main content styling */
 #main-content {
     margin: 20px auto;
     padding: 20px;
@@ -66,10 +67,13 @@ h2:not(.species-header), h3{
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+/* Links styling */
 .link {
     color: #016894;
     text-decoration: none;
 }
+
+/* Highlighted text styling */
 .important {
     font-weight: bold;
     color: #016894;
@@ -79,11 +83,13 @@ h2:not(.species-header), h3{
     padding-left: 1px;
 }
 
+/* Unordered list styling */
 ul {
     list-style: none;
+    padding-left: 25px;
 }
 
-ul li::before{
+ul li::before {
     color: #19B8DA;
     content: "\2022";
     font-weight: bold;
@@ -92,13 +98,8 @@ ul li::before{
     margin-left: -1em;
 }
 
-
-
+/* Ordered list styling */
 ol {
-    padding-left: 25px;
-}
-
-ul {
     padding-left: 25px;
 }
 
@@ -106,10 +107,11 @@ li {
     margin: 10px 0;
 }
 
+/* Quiz section styling */
 #quiz-section {
     display: grid;
-    grid-template-columns: 1fr 1.5fr 1fr;
-    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1.5fr 1fr; /* Three columns for layout */
+    grid-template-rows: 1fr; /* One row for layout */
     background-color: #90E0EF;
     padding: 20px;
     border-radius: 8px;
@@ -117,26 +119,26 @@ li {
     margin-bottom: 20px;
 }
 
-.quiz-image{
-    grid-column: 1;
-    grid-row: 1;
-    margin: 70px auto auto 30px;
-    border: 5px solid #8201E6;
+.quiz-image {
+    grid-column: 1; /* On the first column */
+    grid-row: 1; /* On the first row */
+    margin: 70px auto auto 30px; /* Positioning */
+    border: 5px solid #8201E6; /* Border styling */
 }
 
-.quiz-header{
-    grid-column: 1;
-    grid-row: 1;
+.quiz-header {
+    grid-column: 1; /* On the first column */
+    grid-row: 1; /* On the first row */
 }
 
-.quiz-form{
-    grid-column: 3;
-    grid-row: 1;
-    display: flex;
-    flex-direction: column;
-}
+.quiz-form {
+    grid-column: 3; /* On the third column */
+    grid-row: 1; /* On the first row */
+    display: flex; /* Flexbox layout */
+    flex-direction: column; /* Column layout */
+} 
 
-form label{
+form label {
     font-weight: bold;
     font-size: 70%;
 }
@@ -150,7 +152,6 @@ form input {
 form label, form input {
     top: 40px;
     margin-bottom: 10px;
-    
 }
 
 input[type="submit"] {
@@ -167,22 +168,22 @@ input[type="submit"]:hover {
     background-color: #005f99;
 }
 
+/* Table styling */
 table {
     width: 100%;
     border-collapse: collapse;
     border-color: black;
     margin-top: 20px;
-    max-width: 900px; 
+    max-width: 900px;
     margin-right: auto;
-    margin-left: auto;   
-    
+    margin-left: auto;
 }
 
-#species-table{
+#species-table {
     margin-top: 20px;
-    max-width: 900px; 
+    max-width: 900px;
     margin-right: auto;
-    margin-left: auto; 
+    margin-left: auto;
 }
 
 th, td {
@@ -200,6 +201,7 @@ tr:nth-child(odd) {
     background-color: #FFFFFF;
 }
 
+/* Footer styling */
 #footer {
     font-size: 90%;
     text-align: center;
@@ -207,8 +209,8 @@ tr:nth-child(odd) {
     color: white;
     margin: auto;
     margin-top: 20px;
-    text-align: center;
-    padding: 20px 10px 20px 10px;
+    margin-bottom: 20px;
+    padding: 20px 10px;
     max-width: 900px;
     border-radius: 8px;
 }
